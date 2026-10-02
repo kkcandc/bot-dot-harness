@@ -27,7 +27,7 @@ function NoteForm({ disabled, onAdd }: { disabled: boolean; onAdd: (title: strin
       </label>
       <textarea id="note-body" value={body} placeholder="Only this bay will remember it" onChange={(event) => setBody(event.target.value)} />
       <button className="ghost" type="submit" disabled={disabled || title.trim().length === 0 || body.trim().length === 0}>
-        Pin to this bay
+        Save in this bay
       </button>
     </form>
   );
